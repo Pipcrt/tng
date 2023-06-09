@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ТНГ-Ижгеофизсервис</title>
+</head>
+
+<body>
+    <div class="podlojka" id="podlojka"></div>
+    <div class="header" id="header">
+        <div class="header_inner">
+            <div class="container_header">
+                <div class="left_header">
+                    <div class="logo_header">
+                        <a href="#"><img src="img/header-logo.svg" alt="" class="header_logo_img"></a>
+                    </div>
+                    <div class="nav_header">
+                        <ul class="header_ul">
+                            <li class="header_li"><a href="#main" class="header_link">Главная</a></li>
+                            <li class="header_li"><a href="#partners" class="header_link">Партнеры</a></li>
+                            <li class="header_li"><a href="#portfolio" class="header_link">Портфолио</a></li>
+                            <li class="header_li"><a href="#questions" class="header_link">Отзывы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_header">
+                    <div class="tel_header" ><a href="#" class="header_right_link" onclick="showDivOne()" >Регистрация</a></div>
+                    <div class="email_header"><a href="#" class="header_right_link" onclick="showDivTwo()">Вход</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="forms_reg" id="reg_one" style="display: none;">
+            <div class="cross">
+                <a href="#" class="cross_link"><img src="img/cross.svg" alt="" class="cross_img" onclick="hideDiv()"></a>
+            </div>
+            <div class="title_reg">
+                Регистрация
+            </div>
+            <form action="" class="form_reg">
+                <input type="text" placeholder="Email" class="input">
+                <input type="text" placeholder="Логин" class="input">
+                <input type="text" placeholder="Пароль" class="input">
+                <div class="personal_reg">
+                    <input type="checkbox" placeholder="" class="input_check">
+                    <a href="" class="personal_link">Согласие на обработку персональных данных</a>
+                </div>
+                <button type="submit" class="btn_regg">Регистрация</button>
+            </form>
+        </div>
+        <div class="forms_reg" id="reg_two" style="display: none;">
+            <div class="cross">
+                <a href="#" class="cross_link"><img src="img/cross.svg" alt="" class="cross_img" onclick="hideDiv()"></a>
+            </div>
+            <div class="title_reg">
+                Вход
+            </div>
+            <form action="" class="form_reg">
+                <input type="text" placeholder="Логин" class="input">
+                <input type="text" placeholder="Пароль" class="input">
+                <div class="personal_reg">
+                    <input type="checkbox" placeholder="" class="input_check">
+                    <a href="" class="personal_link">Согласие на обработку персональных данных</a>
+                </div>
+                <button type="submit" class="btn_regg">Вход</button>
+            </form>
+        </div>
+        <div class="main_inner">
+            <div class="container_main">
+                <div class="top_main">
+                    <div class="left_txt_main">
+                        <div class="titile_left_main">Наша цель- <br>заслужить доверие и<br> уважение заказчика
+                        </div>
+                        <div class="subtitle_left_main">Вот уже более 30 лет мы работаем на рынке информационных
+                            услуг, проводим полный спектр геофизических исследований и работ в нефтегазовых
+                            скважинах любой категории сложности.</div>
+                    </div>
+                    <div class="right_img_main">
+                        <img src="img/right_img_main.jpg" alt="" class="right_img">
+                    </div>
+                </div>
+                <div class="bottom_main">
+                    <div class="left_img_main">
+                        <img src="img/left_img_main.jpg" alt="" class="left_img">
+                    </div>
+                    <div class="right_txt_main">
+                        <span class="text_main">ООО "ТНГ-Ижгеофизсервис" располагает мощной производственной базой
+                            со всей необходимой инфоструктурой, оснащено современной техникой и оборудованием,
+                            владеет передовыми технологиями и имеет команду высококлассных специалистов, способных
+                            оперативно и на высоком уровне решать любые задачи нефтепромысловой геологии. В
+                            настоящее время производственные мощности предприятия позволяют выполнять практически
+                            любой комплекс геофизических работ как в России, так и за ее пределами. Применение
+                            современных цифровых технологий регистрации, передачи и обработки данных, позволяет
+                            выдавать заказчику оперативные результаты ГИС в течение 4-8 часов после проведения
+                            полевых исследований. Имеющиеся на вооружении предприятия мощные системы обработки и
+                            интерпретации данных ГИС, позволяют наряду с текстовым геологическим заключением
+                            предоставлять заказчику графический материал в виде планшетов диаграмм как отдельных
+                            видов каротажа, так и непрерывного измерения количественных параметров по разрезу,
+                            включая литологическую колонку, объемную модель породы, насыщение и стратиграфию.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners" id="partners">
+        <div class="partners_inner">
+            <div class="container_partners">
+                <div class="partners_title">
+                    <h1 class="partners_h1">Наши партнеры</h1>
+                </div>
+                <swiper-container class="mySwiper" autoplay-delay="2500" autoplay-disable-on-interaction="false"
+                    slides-per-view="5">
+                    <swiper-slide class="slide_partner"><img src="img/tatneft.jpg" alt=""
+                            class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/tagras.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/gazprom.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/rosneft.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/lykoil.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/tatneft.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/tagras.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/gazprom.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/rosneft.jpg" alt="" class="slider_image"></swiper-slide>
+                    <swiper-slide><img src="img/lykoil.jpg" alt="" class="slider_image"></swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio_inner">
+            <div class="container_portfolio">
+                <div class="portfolio_title">
+                    <h2 class="portfolio_h2">
+                        Портфолио
+                    </h2>
+                </div>
+                <div class="portfolio_cont_card">
+                    <div class="portfolio_top_card">
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                    </div>
+                    <div class="portfolio_bottom_card">
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                        <div class="portfolio_card">
+                            <img src="img/right_img_main.jpg" alt="" class="hover_image_scale">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions" id="questions">
+        <div class="questions_inner">
+            <div class="container_questions">
+                <div class="title_questions">
+                    <h3 class="questions_h3">Отзывы</h3>
+                </div>
+                <swiper-container class="cont_card" slides-per-view="2" space-between="30" autoplay-delay="2500"
+                    autoplay-disable-on-interaction="false">
+                    <swiper-slide class="card_test">
+                        <div class="line_test"></div>
+                        <div class="top_test">
+                            <div class="circle_test"></div>
+                            <div class="title_test">
+                                <h5 class="fio_test">ФИО</h5>
+                                <p class="fio_test_title">Position</p>
+                            </div>
+                        </div>
+                        <div class="bottom_test">
+                            <span class="test_span">
+                                Urna cursus aliquet sagittis erat bibendum sagittis. Auctor risus posuere duis
+                                vivamus. Mattis tellus, quam amet sapien odio in viverra. Pharetra, pharetra
+                                dictum nibh adipiscing. Varius aliquet ac, amet sodales curabitur enim.
+                            </span>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="card_test">
+                        <div class="line_test"></div>
+                        <div class="top_test">
+                            <div class="circle_test"></div>
+                            <div class="title_test">
+                                <h5 class="fio_test">ФИО</h5>
+                                <p class="fio_test_title">Position</p>
+                            </div>
+                        </div>
+                        <div class="bottom_test">
+                            <span class="test_span">
+                                Urna cursus aliquet sagittis erat bibendum sagittis. Auctor risus posuere duis
+                                vivamus. Mattis tellus, quam amet sapien odio in viverra. Pharetra, pharetra
+                                dictum nibh adipiscing. Varius aliquet ac, amet sodales curabitur enim.
+                            </span>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="card_test">
+                        <div class="line_test"></div>
+                        <div class="top_test">
+                            <div class="circle_test"></div>
+                            <div class="title_test">
+                                <h5 class="fio_test">ФИО</h5>
+                                <p class="fio_test_title">Position</p>
+                            </div>
+                        </div>
+                        <div class="bottom_test">
+                            <span class="test_span">
+                                Urna cursus aliquet sagittis erat bibendum sagittis. Auctor risus posuere duis
+                                vivamus. Mattis tellus, quam amet sapien odio in viverra. Pharetra, pharetra
+                                dictum nibh adipiscing. Varius aliquet ac, amet sodales curabitur enim.
+                            </span>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="card_test">
+                        <div class="line_test"></div>
+                        <div class="top_test">
+                            <div class="circle_test"></div>
+                            <div class="title_test">
+                                <h5 class="fio_test">ФИО</h5>
+                                <p class="fio_test_title">Position</p>
+                            </div>
+                        </div>
+                        <div class="bottom_test">
+                            <span class="test_span">
+                                Urna cursus aliquet sagittis erat bibendum sagittis. Auctor risus posuere duis
+                                vivamus. Mattis tellus, quam amet sapien odio in viverra. Pharetra, pharetra
+                                dictum nibh adipiscing. Varius aliquet ac, amet sodales curabitur enim.
+                            </span>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="card_test">
+                        <div class="line_test"></div>
+                        <div class="top_test">
+                            <div class="circle_test"></div>
+                            <div class="title_test">
+                                <h5 class="fio_test">ФИО</h5>
+                                <p class="fio_test_title">Position</p>
+                            </div>
+                        </div>
+                        <div class="bottom_test">
+                            <span class="test_span">
+                                Urna cursus aliquet sagittis erat bibendum sagittis. Auctor risus posuere duis
+                                vivamus. Mattis tellus, quam amet sapien odio in viverra. Pharetra, pharetra
+                                dictum nibh adipiscing. Varius aliquet ac, amet sodales curabitur enim.
+                            </span>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+    </div>
+    <div class="btn_block">
+        <div class="forms_reg" id="reg_three" style="display: none;">
+            <div class="cross">
+                <a href="#" class="cross_link"><img src="img/cross.svg" alt="" class="cross_img" onclick="hideDiv()"></a>
+            </div>
+            <div class="title_reg">
+                Отзывы
+            </div>
+            <form action="" class="form_reg">
+                <input type="text" placeholder="Email" class="input">
+                <input type="text" placeholder="Логин" class="input">
+                <input type="text" placeholder="Отзыв" class="input"image.png>
+                <div class="personal_reg">
+                    <input type="checkbox" placeholder="" class="input_check">
+                    <a href="" class="personal_link">Согласие на обработку персональных данных</a>
+                </div>
+                <button type="submit" class="btn_regg">Отправить</button>
+            </form>
+        </div>
+        <div class="btn_block_inner">
+            <div class="container_btn_block">
+                <div class="title_btn_block">
+                    <h2 class="btn_block_h2">
+                        Хотите оставить отзыв?
+                    </h2>
+                </div>
+                <div class="btn_cont">
+                    <button class="btn_quest" onclick="showDivThree()">Оставить отзыв</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_inner">
+            <div class="container_footer">
+                <div class="column_left">
+                    <div class="footer_logo">
+                        <img src="img/footer_logo.svg" alt="" class="footer_logo_img">
+                    </div>
+                    <div class="footer_span">
+                        <span class="footer_slogan">
+                            Мы всегда готовы к взаимовыгодному сотрудничеству, готовы оперативно реагировать на
+                            пожелания партнеров и вести гибкую ценовую политику.
+                        </span>
+                    </div>
+                    <div class="footer_copyright">
+                        <p class="copyright_tng">
+                            Copyright © 2023 ООО “ТНГ-Ижгеофизсервис”.
+                        </p>
+                    </div>
+                </div>
+                <div class="column_mr">
+                    <div class="column_middle">
+                        <h2 class="footer_h2">
+                            Навигация
+                        </h2>
+                        <ul class="footer_ul">
+                            <li class="footer_li"><a href="" class="footer_menu">Главная</a></li>
+                            <li class="footer_li"><a href="" class="footer_menu">Мощности</a></li>
+                            <li class="footer_li"><a href="" class="footer_menu">Партнеры</a></li>
+                            <li class="footer_li"><a href="" class="footer_menu">Портфолио</a></li>
+                            <li class="footer_li"><a href="" class="footer_menu">Отзывы</a></li>
+                        </ul>
+                    </div>
+                    <div class="column_right">
+                        <h2 class="footer_h2">
+                            Контакты
+                        </h2>
+                        <div class="addres">
+                            <div class="title_footer_addres">Адрес</div>
+                            <div class="subtitle_footer_addres">426039, Удмуртсакая Республика, г.Ижевск,
+                                ул.Новосмирновская, 25</div>
+                        </div>
+                        <div class="email_footer">
+                            <div class="title_email_footer">EMAIL</div>
+                            <div class="subtitle_email_footer">igs@uigs.ru</div>
+                        </div>
+                        <div class="phone_footer">
+                            <div class="title_phone_footer">Телефон</div>
+                            <div class="subtitle_footer_phone">(808) 555-0111 или (303) 555-0105</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

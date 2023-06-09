@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Wix+Madefor+Display:wght@400;500;600&display=swap');
+
+/* обнуляющие стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* подложка */
+
+.podlojka {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 100;
+    display: none;
+}
+
+/* блок контейнера */
+body {
+    overflow-x: hidden;
+    padding: 0;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+/* блок шапки */
+.header {
+    min-width: 100%;
+    height: 194px;
+}
+
+.header_inner {
+    width: 1440px;
+    height: 194px;
+    padding: 40px 0 40px 0;
+    margin: 0 auto;
+}
+
+.container_header {
+    width: 1170px;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.left_header {
+    align-items: center;
+    width: 679px;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_header {
+    width: 114px;
+    height: 114px;
+}
+
+.header_logo_img {
+    max-width: 114px;
+    max-height: 114px;
+}
+
+.nav_header {
+    width: 506px;
+}
+
+.header_ul {
+    display: flex;
+    width: 506px;
+    gap: 32px;
+}
+
+.header_link {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+}
+
+.header_link:hover {
+    color: #d62828;
+}
+
+.right_header {
+    align-items: center;
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_right_link {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+    cursor: pointer;
+}
+
+.header_right_link:hover {
+    color: #d62828;
+}
+
+/* блок с формами */
+
+.forms_reg {
+    position: fixed;
+    z-index: 10001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 360px;
+    height: 424px;
+    background-color: #FFFFFF;
+}
+
+.cross {
+    width: 18px;
+    height: 18px;
+    margin: 19px 16px 14px 328px;
+}
+
+.cross_img {
+    width: 18px;
+    height: 18px;
+}
+
+.title_reg {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 138%;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+    color: #151515;
+}
+
+.form_reg {
+    width: 280px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.input {
+    width: 280px;
+    height: 35px;
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+    padding-left: 12px;
+}
+
+.input::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 138%;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #151515;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.personal_reg {
+    display: flex;
+    justify-content: space-between;
+    width: 254px;
+    height: 15px;
+    margin-bottom: 30px;
+}
+
+.personal_link {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 10px;
+    line-height: 138%;
+    letter-spacing: 0.01em;
+    color: #151515;
+    margin-top: 2px;
+}
+
+.input_check {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.btn_regg {
+    font-family: 'Wix Madefor Display', sans-serif;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #202020;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 138%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #151515;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.8s, background-color 0.8s, color 0.8s;
+}
+
+.btn_regg:hover {
+    background-color: #000000;
+    border-color: transparent;
+    color: #F3F3F3;
+}
+
+
+/* блок главная */
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.main_inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.top_main {
+    height: 530px;
+    display: flex;
+}
+
+.left_txt_main {
+    width: 479px;
+    height: 302px;
+    margin: 117px 118px 117px 135px;
+}
+
+.titile_left_main {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 138%;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #151515;
+}
+
+.subtitle_left_main {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    margin-top: 32px;
+}
+
+.bottom_main {
+    display: flex;
+}
+
+.right_txt_main {
+    width: 731px;
+    height: 528px;
+    padding: 72px 68px 72px 71px;
+    background: #F3F3F3;
+}
+
+.text_main {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #151515;
+}
+
+/* блок партнеры */
+
+.partners {
+    min-width: 100vw;
+}
+
+.partners_inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.container_partners {
+    height: 328px;
+}
+
+.partners_h1 {
+    text-align: center;
+    margin: 72px 0 72px 0;
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: #151515;
+}
+
+.mySwiper {
+    overflow: hidden;
+    width: 1200px;
+    height: 55px;
+}
+
+.slide_partner {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_image {
+    width: 157.95px;
+    height: 52.65px;
+    align-items: center;
+}
+
+
+/* блок портфолио */
+
+.portfolio {
+    min-width: 100%;
+    background: #F3F3F3;
+}
+
+.portfolio_inner {
+    width: 1440px;
+    height: 906px;
+    margin: 0 auto;
+    background: #F3F3F3;
+}
+
+.container_portfolio {
+    padding: 72px 0 72px 0;
+}
+
+.portfolio_h2 {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    color: #151515;
+    margin-bottom: 40px;
+}
+
+.portfolio_cont_card {
+    width: 1170px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.portfolio_top_card {
+    width: 1170px;
+    height: 320px;
+    display: flex;
+    gap: 30px;
+}
+
+.portfolio_card {
+    width: 270px;
+    height: 320px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hover_image_scale {
+    transition: 1s;
+    max-width: 270px;
+    max-height: 320px;
+    display: block;
+}
+
+.hover_image_scale:hover {
+    transform: scale(1.2);
+}
+
+.portfolio_bottom_card {
+    display: flex;
+    gap: 30px;
+    width: 1170px;
+    height: 320px;
+}
+
+/* блок вопросы и пожелания */
+.questions {
+    width: 100vw;
+    height: 681.88px;
+    background: #F3F3F3;
+}
+
+.questions_inner {
+    margin: 0 auto;
+    background: #F3F3F3;
+    width: 1440px;
+    height: 681.88px;
+}
+
+.title_questions {
+    margin: 0 0 40px 0;
+}
+
+.questions_h3 {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: #151515;
+}
+
+.test {
+    width: 1440px;
+    height: 681.88px;
+    background: #F3F3F3;
+}
+
+.cont_card {
+    width: 1170px;
+    height: 395px;
+    margin-bottom: 72px;
+}
+
+.card_test {
+    position: relative;
+    flex-direction: column;
+    width: 570px;
+    height: 395px;
+    background: #FFFFFF;
+}
+
+.line_test {
+    position: absolute;
+    width: 570px;
+    height: 0px;
+    left: 0px;
+    top: 137px;
+    z-index: 1;
+    border: 1px solid #151515;
+}
+
+.top_test {
+    display: flex;
+    height: 172px;
+    margin: 32px 0 24px 0;
+}
+
+.circle_test {
+    width: 172px;
+    height: 172px;
+    z-index: 10;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin: 0 35px 0 91px;
+}
+
+.title_test {
+    margin: 33px 192px 79px 0;
+    width: 80px;
+    height: 60px;
+}
+
+.fio_test {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #151515;
+}
+
+.fio_test_title {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #D9D9D9;
+}
+
+.bottom_test {
+    width: 400px;
+    height: 135px;
+    margin: 0 auto;
+}
+
+.test_span {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #151515;
+}
+
+/* блок "Хотите здать вопрос?" */
+.btn_block {
+    width: 100vw;
+}
+
+.btn_block_inner {
+    margin: 0 auto;
+    padding: 72px 0 72px 0;
+    width: 1440px;
+}
+
+.container_btn_block {
+    width: 1170px;
+    height: 104px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_btn_block {
+    width: 325px;
+    height: 104px;
+}
+
+.btn_block_h2 {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    color: #151515;
+}
+
+.btn_cont {
+    width: 193px;
+    height: 48px;
+    margin: 28px 0 28px 0;
+}
+
+.btn_quest {
+    width: 193px;
+    height: 48px;
+    border: 2.5px solid #505050;
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: border-color 0.7s, background-color 0.7s, color 0.7s;
+}
+
+.btn_quest:hover {
+    background-color: #000000;
+    border-color: transparent;
+    color: #F3F3F3;
+}
+
+/* блок "подвал сайта" */
+
+.footer {
+    width: 100vw;
+    height: 506px;
+    background: #F3F3F3;
+
+}
+
+.footer_inner {
+    padding: 72px 0 72px 0;
+    width: 1440px;
+    height: 506px;
+    margin: 0 auto;
+    background: #F3F3F3;
+}
+
+
+.container_footer {
+    width: 1170px;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.column_left {
+    width: 372px;
+    height: 362px;
+}
+
+.footer_logo {
+    width: 114px;
+    height: 114px;
+    margin-bottom: 32px;
+}
+
+.footer_span {
+    width: 300px;
+    margin-bottom: 74px;
+}
+
+.footer_slogan {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #151515;
+}
+
+.footer_copyright {
+    width: 372px;
+    height: 24px;
+}
+
+.copyright_tng {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #151515;
+}
+
+.column_mr {
+    width: 600px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 49px;
+}
+
+.column_middle {
+    width: 155px;
+    height: 280px;
+}
+
+.footer_h2 {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.footer_ul {
+    width: 155px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.footer_menu {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #151515;
+}
+
+.footer_menu:hover {
+    color: #d62828;
+}
+
+.column_right {
+    width: 270px;
+    height: 263px;
+}
+
+.addres {
+    width: 250px;
+    height: 72px;
+    margin: 20px 0 24px 0;
+}
+
+.title_footer_addres {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505050;
+    margin-bottom: 6px;
+}
+
+.subtitle_footer_addres {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #151515;
+}
+
+.email_footer {
+    width: 270px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.title_email_footer {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505050;
+    margin-bottom: 6px;
+}
+
+.subtitle_email_footer:hover {
+    color: #d62828;
+    cursor: pointer;
+}
+
+
+.subtitle_email_footer {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #151515;
+}
+
+.phone_footer {
+    width: 258px;
+    height: 51px;
+}
+
+.title_phone_footer {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505050;
+    margin-bottom: 6px;
+}
+
+.subtitle_footer_phone {
+    /* font-family: 'Poppins'; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #151515;
+}
+
+.subtitle_footer_phone:hover {
+    color: #d62828;
+}
